@@ -10,8 +10,8 @@ import org.lazan.t5.stitch.model.GridRowDecorator;
 public class GridDecoratorDemo {
 	public static class Item {
 		public int value;
-		public int valueTimes2;
-		public int valueTimes10;
+		public int valueTimesTwo;
+		public int valueTimesTen;
 	}
 
 	public List<Item> getItems() {
@@ -21,8 +21,8 @@ public class GridDecoratorDemo {
 			
 			Item item = new Item();
 			item.value = value;
-			item.valueTimes2 = value * 2;
-			item.valueTimes10 = value * 10;
+			item.valueTimesTwo = value * 2;
+			item.valueTimesTen = value * 10;
 			
 			items.add(item);
 		}
