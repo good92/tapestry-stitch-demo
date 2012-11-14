@@ -29,6 +29,9 @@ public class GridDecoratorDemo {
 		return items;
 	}
 	
+	/**
+	 * Display an alert when any row is clicked
+	 */
 	public GridRowDecorator getRowDecorator() {
 		return new GridRowDecorator() {
 			public void decorate(Element element, Object rowValue, int rowIndex) {
@@ -38,7 +41,10 @@ public class GridDecoratorDemo {
 			}
 		};
 	}
-	
+
+	/**
+	 * Set the background color of every cell
+	 */
 	public GridCellDecorator getCellDecorator() {
 		return new GridCellDecorator() {
 			public void decorate(Element cellElement, Object rowObject, int rowIndex, String propertyName, int colIndex) {
