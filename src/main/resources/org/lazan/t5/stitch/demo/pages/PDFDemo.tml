@@ -1,0 +1,59 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+	xmlns:p="tapestry:parameter" xmlns:fo="http://www.w3.org/1999/XSL/Format"
+	xmlns:fox="http://xml.apache.org/fop/extensions">
+
+	<t:stitch.pdflink label="Download PDF">
+		<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+			<fo:layout-master-set>
+				<fo:simple-page-master master-name="first"
+					margin-right="1.5cm" margin-left="1.5cm" margin-bottom="2cm"
+					margin-top="1cm" page-width="21cm" page-height="29.7cm">
+					<fo:region-body margin-top="1cm" />
+					<fo:region-before extent="1cm" />
+					<fo:region-after extent="1.5cm" />
+				</fo:simple-page-master>
+			</fo:layout-master-set>
+
+			<fo:page-sequence master-reference="first">
+				<fo:flow flow-name="xsl-region-body">
+					<fo:block space-before.optimum="30pt" space-after.optimum="15pt">
+						Hello ${name}
+					</fo:block>
+
+					<fo:table border-collapse="collapse" table-layout="fixed">
+						<fo:table-column column-width="3cm" />
+						<fo:table-column column-width="3cm" />
+						<fo:table-column column-width="3cm" />
+
+						<fo:table-body>
+							<fo:table-row>
+								<fo:table-cell border-color="blue" border-width="0.5pt" border-style="solid">
+									<fo:block text-align="center">First Name</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border-color="blue" border-width="0.5pt" border-style="solid">
+									<fo:block text-align="center">Surname</fo:block>
+								</fo:table-cell>
+								<fo:table-cell border-color="blue" border-width="0.5pt" border-style="solid">
+									<fo:block text-align="center">Age</fo:block>
+								</fo:table-cell>
+							</fo:table-row>
+							<t:loop source="people" value="person">
+								<fo:table-row>
+									<fo:table-cell border-color="blue" border-width="0.5pt" border-style="solid">
+										<fo:block text-align="center">${person.firstName}</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border-color="blue" border-width="0.5pt" border-style="solid">
+										<fo:block text-align="center">${person.surname}</fo:block>
+									</fo:table-cell>
+									<fo:table-cell border-color="blue" border-width="0.5pt" border-style="solid">
+										<fo:block text-align="center">${person.age}</fo:block>
+									</fo:table-cell>
+								</fo:table-row>
+							</t:loop>
+						</fo:table-body>
+					</fo:table>
+				</fo:flow>
+			</fo:page-sequence>
+		</fo:root>
+	</t:stitch.pdflink>
+</html>
