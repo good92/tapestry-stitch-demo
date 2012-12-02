@@ -20,9 +20,9 @@
 
 			<fo:page-sequence master-reference="first">
 				<fo:flow flow-name="xsl-region-body">
-					<fo:block space-before.optimum="30pt" space-after.optimum="15pt">
-						Hello ${name}
-					</fo:block>
+					<fo:block text-align="center">
+						<fo:external-graphic src="${chartURI}"></fo:external-graphic>
+					</fo:block>					
 
 					<fo:table border-collapse="collapse" table-layout="fixed">
 						<fo:table-column column-width="3cm" />
