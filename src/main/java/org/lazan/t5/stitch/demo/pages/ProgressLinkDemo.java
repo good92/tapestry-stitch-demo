@@ -8,14 +8,18 @@ public class ProgressLinkDemo {
 	}
 	
 	public static class TestTask implements ProgressTask {
+		public static final int RUN_MILLIS = 10 * 1000;
+		public static final int SLEEP_MILLIS = 100;
+		
 		private float progress = 0;
+		
 		public void run() {
-			int num = 100;
-			for (int i = 0; i < num; ++ i) {
+			int loopCount = RUN_MILLIS / SLEEP_MILLIS;
+			for (int i = 0; i < loopCount; ++ i) {
 				try {
-					Thread.sleep(100);
+					Thread.sleep(SLEEP_MILLIS);
 				} catch (InterruptedException e) {}
-				progress = i * 1f / num;
+				progress = i * 1f / loopCount;
 			}
 		}
 		

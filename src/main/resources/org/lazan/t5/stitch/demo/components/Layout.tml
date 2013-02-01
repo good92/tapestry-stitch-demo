@@ -24,7 +24,7 @@
 						<span class="icon-bar"></span>
 					</a>
 					-->
-					<a class="brand" href="#">Tapestry Stitch Demo</a>
+					<t:pagelink page="Index" class="brand">Tapestry Stitch Demo</t:pagelink>
 					<!--
 					<div class="nav-collapse collapse">
 						<p class="navbar-text pull-right">
