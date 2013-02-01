@@ -1,3 +1,3 @@
-<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
+<t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
 	<t:grid source="items" t:mixins="stitch/GridDecorator" rowDecorators="rowDecorator" cellDecorators="cellDecorator" />
-</html>
+</t:layout>

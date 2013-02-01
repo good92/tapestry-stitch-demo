@@ -1,4 +1,4 @@
-<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
+<t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd"
 	xmlns:p="tapestry:parameter" xmlns:fo="http://www.w3.org/1999/XSL/Format"
 	xmlns:fox="http://xml.apache.org/fop/extensions">
 
@@ -60,4 +60,4 @@
 			</fo:page-sequence>
 		</fo:root>
 	</t:block>
-</html>
+</t:layout>

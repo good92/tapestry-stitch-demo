@@ -1,7 +1,7 @@
-<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
+<t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
 	<t:stitch.gallery source="images" columns="literal:3" rows="literal:2" value="image">
 		<p:valueBlock>
 			<img src="${image}" />
 		</p:valueBlock>
 	</t:stitch.gallery>
-</html>
+</t:layout>
