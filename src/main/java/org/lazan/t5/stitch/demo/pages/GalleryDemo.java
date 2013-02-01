@@ -23,9 +23,9 @@ public class GalleryDemo {
 			}
 			public List<Asset> getItems(int startIndex, int maxItems) {
 				List<Asset> assets = new ArrayList<Asset>();
-				int itemCount = Math.min(size() - startIndex, maxItems);
-				for (int i = 0; i < itemCount; ++ i) {
-					String path = String.format("images/%s.jpg", i + startIndex);
+				int end = Math.min(size(), startIndex + maxItems);
+				for (int i = startIndex; i < end; ++ i) {
+					String path = String.format("images/%s.jpg", i);
 					assets.add(assetSource.getContextAsset(path, null));
 				}
 				return assets;
