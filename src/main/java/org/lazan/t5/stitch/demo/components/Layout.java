@@ -32,6 +32,7 @@ public class Layout {
 		pageLabelsByPage.put("GalleryDemo", "Gallery");
 		pageLabelsByPage.put("GridDecoratorDemo", "Grid Decorator");
 		pageLabelsByPage.put("PDFDemo", "PDF Link");
+		pageLabelsByPage.put("TabGroupDemo", "Tab Group");
 	}
 	
 	public boolean isAlerts() {
