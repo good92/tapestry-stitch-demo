@@ -1,13 +1,7 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
 	<t:stitch.tabGroup active="oranges">
-		<t:stitch.tab t:id="apples" label="Apples">
-			${applesContent}
-		</t:stitch.tab>
-		<t:stitch.tab t:id="oranges" label="Oranges">
-			${orangesContent}
-		</t:stitch.tab>
-		<t:stitch.tab t:id="pears" label="Pears">
-			${pearsContent}
-		</t:stitch.tab>
+		<t:stitch.tab                label="Apples">${applesContent}</t:stitch.tab>
+		<t:stitch.tab t:id="oranges" label="Oranges">${orangesContent}</t:stitch.tab>
+		<t:stitch.tab                label="Pears">${pearsContent}</t:stitch.tab>
 	</t:stitch.tabGroup>
 </t:layout>
