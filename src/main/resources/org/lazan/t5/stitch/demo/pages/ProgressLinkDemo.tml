@@ -1,5 +1,9 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
+	Click on a link to fire a long-running asynchronous task<br />
 	<t:loop source="1..5">
-		<t:stitch.progressLink task="task" label="Start" />
+		<t:stitch.progressLink task="task">
+			<p:label><div class="btn btn-primary">Start</div></p:label>
+		</t:stitch.progressLink>
+		<br />
 	</t:loop>
 </t:layout>
