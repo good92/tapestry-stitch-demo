@@ -1,9 +1,16 @@
 package org.lazan.t5.stitch.demo.pages;
 
+import org.apache.tapestry5.annotations.PageActivationContext;
+import org.apache.tapestry5.annotations.Property;
+
 /**
  * Content copied from wikipedia
  */
 public class TabGroupDemo {
+	@PageActivationContext
+	@Property
+	private String activeTab;
+	
 	public String getApplesContent() {
 		return "The apple is the pomaceous fruit of the apple tree, species Malus domestica in the rose family (Rosaceae). It is one of the most widely cultivated tree fruits, and the most widely known of the many members of genus Malus that are used by humans. Apples grow on small, deciduous trees. The tree originated in Western Asia, where its wild ancestor, Malus sieversii, is still found today. Apples have been grown for thousands of years in Asia and Europe, and were brought to North America by European colonists. Apples have been present in the mythology and religions of many cultures, including Norse, Greek and Christian traditions. In 2010, the fruit's genome was decoded, leading to new understandings of disease control and selective breeding in apple production.";
 	}
