@@ -33,6 +33,7 @@ public class Layout {
 		pageLabelsByPage.put("GridDecoratorDemo", "Grid Decorator");
 		pageLabelsByPage.put("PDFDemo", "PDF Link");
 		pageLabelsByPage.put("TabGroupDemo", "Tab Group");
+		pageLabelsByPage.put("MapPropBindingDemo", "mapprop Binding");
 	}
 	
 	public boolean isAlerts() {
