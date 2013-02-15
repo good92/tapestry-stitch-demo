@@ -1,9 +1,27 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
-	<t:form>
+	<h3>Demo</h3>
+	<t:form t:id="form">
 		<t:if test="submittedFieldValues">You submitted ${submittedFieldValues}<br /></t:if>
 		<t:loop source="fieldNames" value="fieldName">
-			${fieldName} <t:textfield value="mapprop:fieldValues[fieldName]" translator="translator"/><br />
+			${fieldName} <t:textfield value="mapprop:fieldValues[fieldName]" translate="string"/><br />
 		</t:loop>
 		<input type="submit" />
 	</t:form>
+	
+	<h3>Source</h3>
+	<t:stitch.tabGroup active="sourceTab">
+		<t:stitch.tab label="MapPropBindingDemo.tml">
+			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/MapPropBindingDemo.tml" />
+		</t:stitch.tab>
+		<t:stitch.tab label="MapPropBindingDemo.java">
+			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/demo/pages/MapPropBindingDemo.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="MapPropBinding.java">
+			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/binding/MapPropBinding.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="MapPropBindingFactory.java">
+			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/binding/MapPropBindingFactory.java" />
+		</t:stitch.tab>
+	</t:stitch.tabGroup>
+	
 </t:layout>

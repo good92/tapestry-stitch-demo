@@ -1,5 +1,8 @@
 package org.lazan.t5.stitch.demo.pages;
 
+import org.apache.tapestry5.PersistenceConstants;
+import org.apache.tapestry5.annotations.Persist;
+import org.apache.tapestry5.annotations.Property;
 import org.lazan.t5.stitch.model.ProgressTask;
 
 public class ProgressLinkDemo {
@@ -27,4 +30,8 @@ public class ProgressLinkDemo {
 			return progress;
 		}
 	}
+	
+	@Persist(PersistenceConstants.FLASH)
+	@Property
+	private String sourceTab;	
 }

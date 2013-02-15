@@ -1,7 +1,24 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
-	<t:stitch.tabGroup active="activeTab">
+	<h3>Demo</h3>
+	<t:stitch.tabGroup active="fruitTab">
 		<t:stitch.tab t:id="apples"  label="Apples">${applesContent}</t:stitch.tab>
 		<t:stitch.tab t:id="oranges" label="Oranges">${orangesContent}</t:stitch.tab>
 		<t:stitch.tab t:id="pears"   label="Pears">${pearsContent}</t:stitch.tab>
+	</t:stitch.tabGroup>
+	
+	<h3>Source</h3>
+	<t:stitch.tabGroup active="sourceTab">
+		<t:stitch.tab label="TabGroupDemo.tml">
+			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/TabGroupDemo.tml" />
+		</t:stitch.tab>
+		<t:stitch.tab label="TabGroupDemo.java">
+			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/demo/pages/TabGroupDemo.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="TabGroup.java">
+			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/components/TabGroup.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="TabGroup.tml">
+			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/components/TabGroup.tml" />
+		</t:stitch.tab>
 	</t:stitch.tabGroup>
 </t:layout>

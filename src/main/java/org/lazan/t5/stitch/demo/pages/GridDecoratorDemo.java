@@ -3,6 +3,9 @@ package org.lazan.t5.stitch.demo.pages;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.tapestry5.PersistenceConstants;
+import org.apache.tapestry5.annotations.Persist;
+import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.dom.Element;
 import org.lazan.t5.stitch.model.GridCellDecorator;
 import org.lazan.t5.stitch.model.GridRowDecorator;
@@ -58,4 +61,8 @@ public class GridDecoratorDemo {
 			}
 		};
 	}
+	
+	@Persist(PersistenceConstants.FLASH)
+	@Property
+	private String sourceTab;	
 }

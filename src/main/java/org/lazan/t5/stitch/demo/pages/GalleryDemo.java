@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.tapestry5.Asset;
+import org.apache.tapestry5.PersistenceConstants;
+import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.ioc.annotations.Inject;
 import org.apache.tapestry5.services.AssetSource;
@@ -32,5 +34,8 @@ public class GalleryDemo {
 			}
 		};
 	}
-
+	
+	@Persist(PersistenceConstants.FLASH)
+	@Property
+	private String sourceTab;
 }

@@ -9,8 +9,10 @@ import java.io.InputStream;
 import javax.inject.Inject;
 
 import org.apache.tapestry5.ComponentResources;
+import org.apache.tapestry5.PersistenceConstants;
 import org.apache.tapestry5.StreamResponse;
 import org.apache.tapestry5.annotations.Cached;
+import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.services.Response;
 import org.jfree.chart.ChartUtilities;
@@ -97,4 +99,8 @@ public class PDFDemo {
 			new CountryStats(10, "Japan", 127530000)
 		};
 	}
+	
+	@Persist(PersistenceConstants.FLASH)
+	@Property
+	private String sourceTab;
 }
