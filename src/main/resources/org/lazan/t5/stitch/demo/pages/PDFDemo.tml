@@ -66,16 +66,16 @@
 	<h3>Source</h3>
 	<t:stitch.tabGroup active="sourceTab">
 		<t:stitch.tab label="PDFDemo.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/PDFDemo.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/PDFDemo.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="PDFDemo.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/demo/pages/PDFDemo.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/PDFDemo.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="PDFLink.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/components/PDFLink.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/PDFLink.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="PDFLink.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/components/PDFLink.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/PDFLink.java" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>
 </t:layout>

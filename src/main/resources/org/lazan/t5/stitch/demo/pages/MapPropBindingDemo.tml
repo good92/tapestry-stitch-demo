@@ -11,16 +11,16 @@
 	<h3>Source</h3>
 	<t:stitch.tabGroup active="sourceTab">
 		<t:stitch.tab label="MapPropBindingDemo.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/MapPropBindingDemo.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/MapPropBindingDemo.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="MapPropBindingDemo.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/demo/pages/MapPropBindingDemo.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/MapPropBindingDemo.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="MapPropBinding.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/binding/MapPropBinding.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/binding/MapPropBinding.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="MapPropBindingFactory.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/binding/MapPropBindingFactory.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/binding/MapPropBindingFactory.java" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>
 	

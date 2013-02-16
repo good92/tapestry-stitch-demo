@@ -9,16 +9,16 @@
 	<h3>Source</h3>
 	<t:stitch.tabGroup active="sourceTab">
 		<t:stitch.tab label="TabGroupDemo.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/TabGroupDemo.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/TabGroupDemo.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="TabGroupDemo.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/demo/pages/TabGroupDemo.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/TabGroupDemo.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="TabGroup.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/components/TabGroup.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/TabGroup.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="TabGroup.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/components/TabGroup.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/TabGroup.tml" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>
 </t:layout>

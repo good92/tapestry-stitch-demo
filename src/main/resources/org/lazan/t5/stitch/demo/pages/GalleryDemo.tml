@@ -9,19 +9,19 @@
 	<h3>Source</h3>
 	<t:stitch.tabGroup active="sourceTab">
 		<t:stitch.tab label="GalleryDemo.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/GalleryDemo.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/GalleryDemo.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="GalleryDemo.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/demo/pages/GalleryDemo.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/GalleryDemo.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="GalleryDataModel.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/model/GalleryDataModel.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/GalleryDataModel.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="Gallery.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/components/Gallery.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/Gallery.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="Gallery.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/components/Gallery.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/Gallery.java" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>
 	

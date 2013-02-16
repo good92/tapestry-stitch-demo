@@ -11,25 +11,25 @@
 	<h3>Source</h3>
 	<t:stitch.tabGroup active="sourceTab">
 		<t:stitch.tab label="ProgressLinkDemo.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/ProgressLinkDemo.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/ProgressLinkDemo.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressLinkDemo.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/demo/pages/ProgressLinkDemo.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/ProgressLinkDemo.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressTask.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/model/ProgressTask.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/ProgressTask.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressLink.tml">
-			<t:stitch.syntaxhighlight syntax="xml" source="classpath:org/lazan/t5/stitch/components/ProgressLink.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/ProgressLink.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressLink.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/components/ProgressLink.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/ProgressLink.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressLink.js">
-			<t:stitch.syntaxhighlight syntax="javascript" source="classpath:org/lazan/t5/stitch/components/ProgressLink.js" />
+			<t:stitch.code syntax="javascript" source="classpath:org/lazan/t5/stitch/components/ProgressLink.js" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressTaskManagerImpl.java">
-			<t:stitch.syntaxhighlight syntax="java" source="classpath:org/lazan/t5/stitch/services/ProgressTaskManagerImpl.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/services/ProgressTaskManagerImpl.java" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>
 	
