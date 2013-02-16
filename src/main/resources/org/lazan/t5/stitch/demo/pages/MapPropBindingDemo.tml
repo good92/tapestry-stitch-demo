@@ -1,7 +1,9 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
 	<h3>Demo</h3>
 	<t:form t:id="form">
-		<t:if test="submittedFieldValues">You submitted ${submittedFieldValues}<br /></t:if>
+		<t:if test="submittedFieldValues">
+			<div class="alert alert-success">You submitted ${submittedFieldValues}</div>
+		</t:if>
 		<t:loop source="fieldNames" value="fieldName">
 			${fieldName} <t:textfield value="mapprop:fieldValues[fieldName]" translate="string"/><br />
 		</t:loop>
