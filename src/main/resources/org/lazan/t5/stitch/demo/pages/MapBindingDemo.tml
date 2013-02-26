@@ -3,7 +3,7 @@
 	The <code>map:</code> binding prefix is a two-way binding which can <code>get()</code> and <code>put()</code>
 	to a property of type <code>java.util.Map</code>.<br /><br />
 	Expressions are of the form <code>map:mapexpression[keyexpression]</code>
-	Where <code>mapexpression</code> and <code>keyexpression</code> are normal
+	where <code>mapexpression</code> and <code>keyexpression</code> are normal
 	<a href="http://tapestry.apache.org/property-expressions.html">property expressions</a>.
 	
 	<h3>Demo</h3>
