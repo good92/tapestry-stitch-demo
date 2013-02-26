@@ -14,7 +14,8 @@ public class Layout {
 			new MenuItem("Tab Group", "TabGroupDemo"),
 			new MenuItem("Progress Link", "ProgressLinkDemo"),
 			new MenuItem("Gallery", "GalleryDemo"),
-			new MenuItem("PDF Link", "PDFLinkDemo")
+			new MenuItem("PDF Link", "PDFLinkDemo"),
+			new MenuItem("Code", "CodeDemo")
 		),
 		new MenuGroup("Mixins",
 			new MenuItem("Grid Decorator", "GridDecoratorDemo")
