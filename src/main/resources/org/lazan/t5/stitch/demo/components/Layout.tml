@@ -53,11 +53,13 @@
 				<div class="span2">
 					<div class="well sidebar-nav">
 						<ul class="nav nav-list">
-							<li class="nav-header">Sidebar</li>
-							<t:loop source="pageLabelsByPage.entrySet()" value="pageEntry">
-								<li class="${pageClass}">
-									<t:pagelink page="prop:pageEntry.key">${pageEntry.value}</t:pagelink>
-								</li>
+							<t:loop source="menuGroups" value="menuGroup">
+								<li class="nav-header">${menuGroup.label}</li>
+								<t:loop source="menuGroup.items" value="menuItem">
+									<li class="${pageClass}">
+										<t:pagelink page="prop:menuItem.page">${menuItem.label}</t:pagelink>
+									</li>
+								</t:loop>
 							</t:loop>
 						</ul>
 					</div><!--/.well -->

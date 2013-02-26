@@ -1,15 +1,24 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
+	<h3>Overview</h3>
+	The <code>ProgressLink</code> component renders a link and a progress bar styled by
+	<a href="http://twitter.github.com/bootstrap/components.html#progress">Twitter Bootstrap</a> CSS.
+	Clicking on the link fires an asynchronous <code>ProgressTask</code> which is periodically 
+	polled for it's progress (a value between 0 and 1).
+
 	<h3>Demo</h3>
-	Click on a link to fire a long-running asynchronous task<br />
-	<t:loop source="1..5">
-		<t:stitch.progressLink task="task">
-			<p:label><div class="btn btn-primary">Start</div></p:label>
-		</t:stitch.progressLink>
-		<br />
-	</t:loop>
-	
+	Click on a button to fire a long-running asynchronous task<br />
+	<div class="row-fluid">
+		<div class="span4">
+			<t:loop source="1..3">
+				<t:stitch.progressLink task="task">
+					<p:label><div class="btn btn-primary">Start</div></p:label>
+				</t:stitch.progressLink>
+				<br />
+			</t:loop>
+		</div>
+	</div>
 	<h3>Source</h3>
-	<t:stitch.tabGroup active="sourceTab">
+	<t:stitch.tabGroup>
 		<t:stitch.tab label="ProgressLinkDemo.tml">
 			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/ProgressLinkDemo.tml" />
 		</t:stitch.tab>
@@ -26,10 +35,10 @@
 			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/ProgressLink.java" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressLink.js">
-			<t:stitch.code syntax="javascript" source="classpath:org/lazan/t5/stitch/components/ProgressLink.js" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/components/ProgressLink.js" />
 		</t:stitch.tab>
 		<t:stitch.tab label="ProgressTaskManagerImpl.java">
-			<t:stitch.code source="classpath:org/lazan/t5/stitch/services/ProgressTaskManagerImpl.java" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/services/internal/ProgressTaskManagerImpl.java" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>
 	

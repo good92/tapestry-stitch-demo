@@ -1,40 +1,40 @@
 package org.lazan.t5.stitch.demo.components;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import org.apache.tapestry5.ComponentResources;
 import org.apache.tapestry5.alerts.AlertStorage;
 import org.apache.tapestry5.annotations.Import;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.annotations.SessionState;
-import org.apache.tapestry5.annotations.SetupRender;
 import org.apache.tapestry5.ioc.annotations.Inject;
 
 @Import(stylesheet="context:bootstrap/css/bootstrap.css")
 public class Layout {
+	private static final MenuGroup[] MENU_GROUPS = {
+		new MenuGroup("Components",
+			new MenuItem("Tab Group", "TabGroupDemo"),
+			new MenuItem("Progress Link", "ProgressLinkDemo"),
+			new MenuItem("Gallery", "GalleryDemo"),
+			new MenuItem("PDF Link", "PDFLinkDemo")
+		),
+		new MenuGroup("Mixins",
+			new MenuItem("Grid Decorator", "GridDecoratorDemo")
+		),
+		new MenuGroup("Binding Prefixes", 
+			new MenuItem("map:", "MapBindingDemo")
+		)
+	};
+	
 	@SessionState(create=false)
 	private AlertStorage alertsStorage;
-	
-	@Property
-	private Map<String, String> pageLabelsByPage;
-	
-	@Property
-	private Map.Entry<String, String> pageEntry;
 	
 	@Inject
 	private ComponentResources resources;
 	
-	@SetupRender
-	void setupRender() {
-		pageLabelsByPage = new LinkedHashMap<String, String>();
-		pageLabelsByPage.put("ProgressLinkDemo", "Progress Link");
-		pageLabelsByPage.put("GalleryDemo", "Gallery");
-		pageLabelsByPage.put("GridDecoratorDemo", "Grid Decorator");
-		pageLabelsByPage.put("PDFDemo", "PDF Link");
-		pageLabelsByPage.put("TabGroupDemo", "Tab Group");
-		pageLabelsByPage.put("MapPropBindingDemo", "mapprop Binding");
-	}
+	@Property
+	private MenuGroup menuGroup;
+	
+	@Property
+	private MenuItem menuItem;
 	
 	public boolean isAlerts() {
 		return (alertsStorage != null && !alertsStorage.getAlerts().isEmpty());
@@ -45,6 +45,31 @@ public class Layout {
 	}
 	
 	public String getPageClass() {
-		return resources.getPageName().equalsIgnoreCase(pageEntry.getKey()) ? "active" : null;
+		return resources.getPageName().equalsIgnoreCase(menuItem.page) ? "active" : null;
+	}
+	
+	public MenuGroup[] getMenuGroups() {
+		return MENU_GROUPS;
+	}
+	
+	public static class MenuGroup {
+		public String label;
+		public MenuItem[] items;
+
+		MenuGroup(String label, MenuItem... items) {
+			this.label = label;
+			this.items = items;
+		}
+	}
+	
+	public static class MenuItem {
+		public String label;
+		public String page;
+		
+		MenuItem(String label, String page) {
+			super();
+			this.label = label;
+			this.page = page;
+		}
 	}
 }

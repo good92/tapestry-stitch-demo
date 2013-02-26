@@ -1,4 +1,11 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
+	<h3>Overview</h3>
+	The <code>GridDecorator</code> is a <code>Grid</code> mixin which applies <code>GridRowDecorator</code>
+	and <code>GridCellDecorator</code> instances to the rendered <code>table</code>. Decorators are
+	passed a reference to the row backing object as well as a reference to the row and cell DOM elements.
+	These DOM elements can be manipulated for example to provide a context sensitive menu when a grid row
+	is clicked.
+
 	<h3>Demo</h3>
 	Click on any row to see contextual information
 	<t:grid 
@@ -10,9 +17,9 @@
 	/>
 
 	<h3>Source</h3>
-	<t:stitch.tabGroup active="sourceTab">
+	<t:stitch.tabGroup>
 		<t:stitch.tab label="GridDecoratorDemo.tml">
-			<t:stitch.code syntax="xml" source="classpath:org/lazan/t5/stitch/demo/pages/GridDecoratorDemo.tml" />
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/GridDecoratorDemo.tml" />
 		</t:stitch.tab>
 		<t:stitch.tab label="GridDecoratorDemo.java">
 			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/GridDecoratorDemo.java" />
@@ -23,7 +30,7 @@
 		<t:stitch.tab label="GridRowDecorator.java">
 			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/GridRowDecorator.java" />
 		</t:stitch.tab>
-		<t:stitch.tab label="GridRowDecorator.java">
+		<t:stitch.tab label="GridCellDecorator.java">
 			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/GridCellDecorator.java" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>

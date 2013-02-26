@@ -1,4 +1,12 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
+	<h3>Overview</h3>
+	The <code>TabGroup</code> component is a container for <code>Tab</code> components which are 
+	styled by <a href="http://twitter.github.com/bootstrap/javascript.html#tabs">Twitter bootstrap</a>
+	CSS. Tab changes are rendered via AJAX when javascript is available. It is recommended that you bind the <code>active</code>
+	component parameter to a <code>@PageActivationContext</code> variable. This will allow the links
+	to gracefully degrade when javascript is not available, thus supporting right click / open in new window 
+	and improving <a href="http://en.wikipedia.org/wiki/Search_engine_optimization">SEO</a> for your site.
+	
 	<h3>Demo</h3>
 	<t:stitch.tabGroup active="fruitTab">
 		<t:stitch.tab t:id="apples"  label="Apples">${applesContent}</t:stitch.tab>
@@ -7,7 +15,7 @@
 	</t:stitch.tabGroup>
 	
 	<h3>Source</h3>
-	<t:stitch.tabGroup active="sourceTab">
+	<t:stitch.tabGroup>
 		<t:stitch.tab label="TabGroupDemo.tml">
 			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/TabGroupDemo.tml" />
 		</t:stitch.tab>

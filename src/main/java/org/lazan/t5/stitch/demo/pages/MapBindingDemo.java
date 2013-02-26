@@ -8,7 +8,6 @@ import java.util.regex.Pattern;
 import org.apache.tapestry5.Field;
 import org.apache.tapestry5.PersistenceConstants;
 import org.apache.tapestry5.annotations.InjectComponent;
-import org.apache.tapestry5.annotations.PageActivationContext;
 import org.apache.tapestry5.annotations.Persist;
 import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.annotations.SetupRender;
@@ -16,7 +15,7 @@ import org.apache.tapestry5.corelib.components.Form;
 import org.apache.tapestry5.corelib.components.TextField;
 import org.lazan.t5.stitch.field.FieldSnapshot;
 
-public class MapPropBindingDemo {
+public class MapBindingDemo {
 	private static final String[] FIELD_NAMES = { "field1", "field2", "field3" };
 	
 	private static final Pattern CONTROL_NAME_PATTERN = Pattern.compile(".*_(.*)");
@@ -45,10 +44,6 @@ public class MapPropBindingDemo {
 		}
 	}
 	
-	@Persist(PersistenceConstants.FLASH)
-	@Property
-	private String sourceTab;
-
 	void onPrepareForSubmit() {
 		fieldValues = new LinkedHashMap<String, String>();
 		submitted = true;
