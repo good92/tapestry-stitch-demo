@@ -8,6 +8,11 @@ import org.lazan.t5.stitch.model.GridCellDecorator;
 import org.lazan.t5.stitch.model.GridRowDecorator;
 
 public class GridDecoratorDemo {
+	public static final String BLUE = "#3a87ad";
+	public static final String RED = "#b94a48";
+	public static final String YELLOW = "#c09853";
+	public static final String GREEN = "#468847";
+	
 	public static class Item {
 		public int value;
 		public int valueTimesTwo;
@@ -50,9 +55,9 @@ public class GridDecoratorDemo {
 			public void decorate(Element cellElement, Object rowObject, int rowIndex, String propertyName, int colIndex) {
 				String color;
 				if (rowIndex % 2 == 0) {
-					color = colIndex % 2 == 0 ? "yellow" : "red";
+					color = colIndex % 2 == 0 ? YELLOW : RED;
 				} else {
-					color = colIndex % 2 == 0 ? "green" : "blue";
+					color = colIndex % 2 == 0 ? GREEN : BLUE;
 				}
 				cellElement.attribute("style", "background-color:" + color);
 			}

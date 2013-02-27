@@ -1,5 +1,5 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
-	<h3>Overview</h3>
+	<h3>Grid Decorator</h3>
 	The <code>GridDecorator</code> is a <code>Grid</code> mixin which applies <code>GridRowDecorator</code>
 	and <code>GridCellDecorator</code> instances to the rendered <code>table</code>. Decorators are
 	passed a reference to the row backing object as well as a reference to the row and cell DOM elements.

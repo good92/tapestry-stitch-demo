@@ -1,5 +1,5 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
-	<h3>Overview</h3>
+	<h3>Code</h3>
 	The <code>Code</code> component uses the <a href="https://code.google.com/p/google-code-prettify/">google code prettify</a>
 	javascript library to render source code with syntax highlighting. If a <code>syntax</code> is not specified,
 	the <code>SyntaxSource</code> service will attempt to determine the syntax from the file extension.

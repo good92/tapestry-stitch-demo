@@ -1,5 +1,5 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
-	<h3>Overview</h3>
+	<h3>Gallery</h3>
 	The <code>Gallery</code> component renders an X by Y cell <code>table</code> with ajax links
 	to the previous and next pages. The underlying <code>GalleryDataModel</code> supports paging.
 

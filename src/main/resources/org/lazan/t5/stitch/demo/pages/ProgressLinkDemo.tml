@@ -1,5 +1,5 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
-	<h3>Overview</h3>
+	<h3>Progress Link</h3>
 	The <code>ProgressLink</code> component renders a link and a progress bar styled by
 	<a href="http://twitter.github.com/bootstrap/components.html#progress">Twitter Bootstrap</a> CSS.
 	Clicking on the link fires an asynchronous <code>ProgressTask</code> which is periodically 

@@ -2,7 +2,7 @@
 	xmlns:p="tapestry:parameter" xmlns:fo="http://www.w3.org/1999/XSL/Format"
 	xmlns:fox="http://xml.apache.org/fop/extensions">
 
-	<h3>Overview</h3>
+	<h3>PDF Link</h3>
 	The <code>PDFLink</code> component renders a link which generates a PDF. The PDF is rendered by
 	<a href="http://xmlgraphics.apache.org/fop/">Apache FOP</a> which transforms a FO
 	<a href="http://tapestry.apache.org/current/apidocs/org/apache/tapestry5/Block.html">block</a>.
