@@ -18,7 +18,8 @@ public class Layout {
 			new MenuItem("Code", "CodeDemo")
 		),
 		new MenuGroup("Mixins",
-			new MenuItem("Grid Decorator", "GridDecoratorDemo")
+			new MenuItem("Grid Decorator", "GridDecoratorDemo"),
+			new MenuItem("Grid Collapse", "GridCollapseDemo")
 		),
 		new MenuGroup("Binding Prefixes", 
 			new MenuItem("map:", "MapBindingDemo")
