@@ -60,10 +60,9 @@
 						</ul>
 					</div><!--/.well -->
 				</div><!--/span -->
-				<div class="span8">
+				<div class="span10">
 					<t:body />
 				</div><!--/span -->
-				<div class="span2"></div>
 			</div><!--/row -->
 
 			<!-- <hr /> <footer> <p>&copy; Company 2012 </p> </footer> -->

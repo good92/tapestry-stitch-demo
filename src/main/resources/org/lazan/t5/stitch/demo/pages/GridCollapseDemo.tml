@@ -2,7 +2,8 @@
 	<h3>Grid Collapse</h3>
 	The <code>GridCollapse</code> mixin flattens a child grid nested within parent grid so that only a single table tag is rendered.
 	The column headings from the child grid are moved to the top level and appropriate <code>rowspan</code> attributes are added to
-	the parent grid cells.
+	the parent grid cells. The mixin can be applied to multiple levels of parent / child grids. It's recommended to use this mixin
+	in conjunction with the <code>DisableSort</code> mixin so that sort links are not rendered on the collapsed grids.
 	<h3>Demo</h3>
 	
 	<h4>Before applying the <code>GridCollapse</code> mixin</h4>
