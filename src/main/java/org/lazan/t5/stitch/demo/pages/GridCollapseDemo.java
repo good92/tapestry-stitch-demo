@@ -9,9 +9,6 @@ public class GridCollapseDemo {
 	@Property
 	private City city;
 	
-	@Property
-	private Street street;
-	
 	public Country[] getCountries() {
 		return new Country[] {
 			new Country("Australia", 
