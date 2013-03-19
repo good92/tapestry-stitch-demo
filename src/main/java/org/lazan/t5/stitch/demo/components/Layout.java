@@ -23,7 +23,11 @@ public class Layout {
 		),
 		new MenuGroup("Binding Prefixes", 
 			new MenuItem("map:", "MapBindingDemo")
+		),
+		new MenuGroup("Concepts", 
+			new MenuItem("Map Grid", "MapGridDemo")
 		)
+		
 	};
 	
 	@SessionState(create=false)
