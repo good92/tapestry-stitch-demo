@@ -45,5 +45,9 @@
 		<t:stitch.tab label="LazyTreeModelSource.java">
 			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/LazyTreeModelSource.java" />
 		</t:stitch.tab>
+		<t:stitch.tab label="ItemCreator.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/services/ItemCreator.java" />
+		</t:stitch.tab>
+		
 	</t:stitch.tabGroup>
 </t:layout>

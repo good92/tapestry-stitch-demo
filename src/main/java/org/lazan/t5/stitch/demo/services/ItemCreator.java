@@ -1,5 +1,6 @@
 package org.lazan.t5.stitch.demo.services;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -49,19 +50,20 @@ public class ItemCreator {
 			}
 		}
 		
-		addItem(categoryMap.get("Sports Cars"), "Mazda RX7", "foo");
-		addItem(categoryMap.get("Sports Cars"), "Porsche 911", "foo");
+		addItem(categoryMap.get("Sports Cars"), "Mazda RX7", "foo", 20000);
+		addItem(categoryMap.get("Sports Cars"), "Porsche 911", "foo", 70000);
 		
-		addItem(categoryMap.get("Cruise Ships"), "Royal Princess", "baz");
-		addItem(categoryMap.get("Cruise Ships"), "Grand Princess", "aaa");
-		addItem(categoryMap.get("Cruise Ships"), "Fairstar", "bbb");
+		addItem(categoryMap.get("Cruise Ships"), "Royal Princess", "baz", 10000000);
+		addItem(categoryMap.get("Cruise Ships"), "Grand Princess", "aaa", 600000000);
+		addItem(categoryMap.get("Cruise Ships"), "Fairstar", "bbb", 20000000);
 	}
 
-	private void addItem(Category category, String name, String description) {
+	private void addItem(Category category, String name, String description, double price) {
 		Item item = new Item();
 		item.setCategory(category);
 		item.setName(name);
 		item.setDescription(description);
+		item.setPrice(new BigDecimal(price));
 		
 		session.save(item);
 	}
