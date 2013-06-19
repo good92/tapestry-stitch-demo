@@ -22,8 +22,8 @@ public class ItemTreeNode {
 		this.childCategoryCount = childCategoryCount;
 	}
 	
-	public boolean isCategory() {
-		return category != null;
+	public boolean isLeaf() {
+		return category == null;
 	}
 	
 	public Category getCategory() {

@@ -19,11 +19,10 @@ public class ItemTreeSource implements LazyTreeModelSource<ItemTreeNode>, ValueE
 	}
 
 	public String getLabel(ItemTreeNode value) {
-		if (value.isCategory()) {
-			return String.format("%s (%s)", value.getCategory().getName(), value.getCategory().getCategoryId());
-		} else {
-			return String.format("%s (%s)", value.getItem().getName(), value.getItem().getItemId());
+		if (value.isLeaf()) {
+			return value.getItem().getName();
 		}
+		return value.getCategory().getName();
 	}
 	
 	public boolean hasChildren(ItemTreeNode value) {
@@ -32,7 +31,7 @@ public class ItemTreeSource implements LazyTreeModelSource<ItemTreeNode>, ValueE
 	
 	public List<ItemTreeNode> getChildren(ItemTreeNode value) {
 		List<ItemTreeNode> children = new ArrayList<ItemTreeNode>();
-		if (value.isCategory()) {
+		if (!value.isLeaf()) {
 			children.addAll(findItemTreeNodes(value.getCategory(), null));
 			for (Item item : value.getCategory().getItems()) {
 				children.add(new ItemTreeNode(item));
@@ -42,7 +41,7 @@ public class ItemTreeSource implements LazyTreeModelSource<ItemTreeNode>, ValueE
 	}
 	
 	public boolean isLeaf(ItemTreeNode value) {
-		return !value.isCategory();
+		return value.isLeaf();
 	}
 
 	public List<ItemTreeNode> getRoots() {
@@ -50,7 +49,7 @@ public class ItemTreeSource implements LazyTreeModelSource<ItemTreeNode>, ValueE
 	}
 	
 	public String toClient(ItemTreeNode value) {
-		if (value.isCategory()) {
+		if (!value.isLeaf()) {
 			return String.valueOf(value.getCategory().getCategoryId());
 		}
 		throw new IllegalStateException("Unexpected toClient call on a leaf node");

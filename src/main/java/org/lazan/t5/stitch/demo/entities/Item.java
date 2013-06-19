@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 import org.apache.tapestry5.beaneditor.NonVisual;
@@ -29,7 +31,7 @@ public class Item {
 	private BigDecimal price;
 	
 	@JoinColumn(name="categoryId")
-	@OneToOne(optional=false)
+	@ManyToOne(optional=false)
 	private Category category;
 
 	public Long getItemId() {

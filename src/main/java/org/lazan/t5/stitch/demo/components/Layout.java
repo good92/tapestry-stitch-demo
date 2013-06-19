@@ -25,9 +25,9 @@ public class Layout {
 			new MenuItem("map:", "MapBindingDemo")
 		),
 		new MenuGroup("Concepts", 
-			new MenuItem("Map Grid", "MapGridDemo")
+			new MenuItem("Map Grid", "MapGridDemo"),
+			new MenuItem("Lazy Tree", "LazyTreeDemo")
 		)
-		
 	};
 	
 	@SessionState(create=false)

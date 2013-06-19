@@ -2,18 +2,48 @@
 	<h3>Lazy Tree</h3>
 	
 	<h3>Demo</h3>
-	<t:tree model="treeModel" />
+	<t:tree model="treeModel" value="currentNode">
+		<p:label>
+			<t:if test="currentNode.leaf">
+				<t:eventlink event="itemSelected" context="currentNode.item" zone="itemZone">${currentNode.item.name}</t:eventlink>
+				<p:else>${currentNode.category.name}</p:else>
+			</t:if>
+		</p:label>
+	</t:tree>
+	<t:zone t:id="itemZone" />
+		
+	<t:block t:id="itemBlock">
+		<t:beandisplay t:object="selectedItem" />
+	</t:block>
 
 	<h3>Source</h3>
 	<t:stitch.tabGroup>
-		<t:stitch.tab label="MapGridDemo.tml">
-			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/MapGridDemo.tml" />
+		<t:stitch.tab label="LazyTreeDemo.tml">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/LazyTreeDemo.tml" />
 		</t:stitch.tab>
-		<t:stitch.tab label="MapGridDemo.java">
-			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/MapGridDemo.java" />
+		<t:stitch.tab label="LazyTreeDemo.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/pages/LazyTreeDemo.java" />
 		</t:stitch.tab>
-		<t:stitch.tab label="MapPropertyConduit.java">
-			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/MapPropertyConduit.java" />
+		<t:stitch.tab label="ItemTreeSource.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/model/ItemTreeSource.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="ItemTreeNode.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/model/ItemTreeNode.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="Item.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/entities/Item.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="Category.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/demo/entities/Category.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="LazyTreeModel.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/LazyTreeModel.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="LazyTreeNode.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/LazyTreeNode.java" />
+		</t:stitch.tab>
+		<t:stitch.tab label="LazyTreeModelSource.java">
+			<t:stitch.code source="classpath:org/lazan/t5/stitch/model/LazyTreeModelSource.java" />
 		</t:stitch.tab>
 	</t:stitch.tabGroup>
 </t:layout>
