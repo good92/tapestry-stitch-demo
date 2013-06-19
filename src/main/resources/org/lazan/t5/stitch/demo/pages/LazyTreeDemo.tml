@@ -1,10 +1,8 @@
 <t:layout xmlns:t="http://tapestry.apache.org/schema/tapestry_5_0_0.xsd" xmlns:p="tapestry:parameter">
-	<h3>Map Grid</h3>
-	This following demonstrates generating a <code>Grid</code> based on an array of <code>java.util.Map</code> instances.
-	The example adds <code>MapPropertyConduit</code> instances to an initially empty <code>BeanModel</code> (based on <code>java.lang.Object</code>)
+	<h3>Lazy Tree</h3>
 	
 	<h3>Demo</h3>
-	<t:grid source="people" model="peopleModel" />
+	<t:tree model="treeModel" />
 
 	<h3>Source</h3>
 	<t:stitch.tabGroup>
