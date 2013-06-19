@@ -2,7 +2,7 @@
 	<h3>Lazy Tree</h3>
 	
 	<h3>Demo</h3>
-	<t:tree model="treeModel" value="currentNode">
+	<t:tree model="treeModel" value="currentNode" expansionModel="expansionModel">
 		<p:label>
 			<t:if test="currentNode.leaf">
 				<t:eventlink event="itemSelected" context="currentNode.item" zone="itemZone">${currentNode.item.name}</t:eventlink>
